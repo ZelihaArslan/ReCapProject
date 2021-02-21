@@ -11,9 +11,9 @@ namespace ConsoleUI
         {
             CarManager carManager = new CarManager(new EfCarDal());
 
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetAllByColorId(2))
             {
-                Console.WriteLine(car.CarId);
+                Console.WriteLine(car.ModelYear);
             }
         }
     }
