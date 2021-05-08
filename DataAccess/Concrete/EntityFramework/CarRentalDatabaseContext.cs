@@ -13,6 +13,8 @@ namespace DataAccess.Concrete.EntityFramework
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=CarRentalDatabase;Trusted_Connection=true");
         }
+
+
         //databasedeki tablolarımla eşleştirdim
         public DbSet<Car> Cars { get; set; }
 
@@ -20,5 +22,6 @@ namespace DataAccess.Concrete.EntityFramework
 
         public DbSet<Color> Colors { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
     }
 }
